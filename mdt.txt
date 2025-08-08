@@ -1,0 +1,17 @@
+incr &a,&b,&reg
+mover #3,#1
+adds #1,#2
+movem #3,#1
+MEND
+adds &f,&s
+mover areg,#1
+add areg,#2
+movem areg,#2
+write #2
+MEND
+subs &f,&s
+mover breg,#1
+sub breg,#1
+movem breg,#2
+write #2
+MEND

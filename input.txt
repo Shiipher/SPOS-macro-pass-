@@ -1,0 +1,33 @@
+macro
+incr &a,&b,&reg
+mover &reg,&a
+adds &a,&b
+movem &reg,&a
+mend
+
+macro
+adds &f,&s
+mover areg,&f
+add areg,&s
+movem areg,&s
+write &s
+mend
+
+macro
+subs &f,&s
+mover breg,&f
+sub breg,&f
+movem breg,&s
+write &s
+mend
+
+start 200
+read n1
+read n2
+adds n1,n2
+subs n1,n2
+incr n1,n2,dreg
+stop
+n1,ds,2
+n2,ds,2
+end

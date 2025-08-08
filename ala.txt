@@ -1,0 +1,3 @@
+ALA for incr: &a, &b, &reg
+ALA for adds: &f, &s
+ALA for subs: &f, &s
